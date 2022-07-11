@@ -1,0 +1,152 @@
+*{
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #252525; 
+}
+
+
+.App {
+  text-align: center;
+}
+
+.portada {
+  width: 100%;
+  height: 250px;
+  background-image: url(./Image/portada.jpg);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size:cover;
+}
+
+h1 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 70px;
+  margin: 0;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-family: 'Amatic SC', cursive;
+  margin: 0;
+  font-size: 40px;
+}
+
+input {
+  width: 73%;
+  height: 30px;
+  background-color: #272121;
+  outline: white;
+  border-radius: 6px;
+  text-decoration: none;
+} 
+
+button {
+  width: 80px;
+  height: 37px;
+  background-color: #252525;
+  margin-left: 15px;
+  transition: .2s;
+  border-radius: 6px;
+}
+
+button:hover {
+  background-color: #48e01c;
+  width: 90px;
+  transition: .2s;
+}
+
+.cardLocation {
+  display: flex;
+  background-color: #272121;
+  width: 80%;
+  margin: 35px auto;
+  border-radius: 6px;
+  padding: 10px;
+  border: 2px solid gray;
+}
+
+.helpercard {
+  width:50%;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.helpercard span {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.helpercard p {
+  font-size: 18px;
+}
+
+.content-resident {
+  width: 82%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.residentcard {
+  width: 300px;
+  border-radius: 5px;
+  margin: 20px auto;
+  background-color: #272121;
+  flex-wrap: wrap;
+}
+
+img {
+  /* width: 280px; */
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.cardinfo {
+  padding: 15px;
+  text-align: left;
+}
+
+.cardinfo span {
+  font-size: 17px;
+  color: gray;
+}
+
+.cardinfo p {
+  color: white;
+  font-size: 20px;
+}
+
+.cardalive {
+  padding: 3px;
+  text-align: left;
+  background-color: #272121;
+  width: 110px;
+  
+  position: absolute;
+  border-radius: 2px;
+  color: white;
+}
+
+.cardalive p {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.colorgrey {
+  color: grey;
+}
+
+.colorgreen {
+  color: green;
+}
+
+.colorred {
+  color: red;
+}
