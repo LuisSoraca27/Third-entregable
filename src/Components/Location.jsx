@@ -7,7 +7,7 @@ import Residentinfo from './Residentinfo';
 const Location = () => {
 
     const [location, setlocation] = useState({})
-    const [text, setText] = useState('escribe aqui')
+    const [text, setText] = useState()
 
     useEffect(() => {
         const randomlocation = Math.floor(Math.random() * 126) + 1;
@@ -32,7 +32,7 @@ const Location = () => {
             <div className='portada'>
             </div>
             <h1>Rick and Morty wiki</h1>
-            <input type="text" value={text} onChange={e => setText(e.target.value)} />
+            <input type="text" value={text} placeholder="   Type a location id" onChange={e => setText(e.target.value)} />
             <button onClick={getLocation}>Search</button>
             <div className='cardLocation'>
                 <div className='helpercard'>

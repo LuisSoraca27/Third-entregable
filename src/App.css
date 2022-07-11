@@ -39,12 +39,16 @@ h2 {
 
 input {
   width: 73%;
-  height: 30px;
+  height: 36px;
   background-color: #272121;
   outline: white;
   border-radius: 6px;
   text-decoration: none;
 } 
+
+input::placeholder {
+  text-align: center;
+}
 
 button {
   width: 80px;
