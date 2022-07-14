@@ -48,28 +48,26 @@ input {
 
 input::placeholder {
   text-align: center;
+  margin-bottom: 20px;
 }
 
 button {
-  width: 80px;
-  height: 37px;
+  color: black;
   background-color: #252525;
-  margin-left: 15px;
   transition: .2s;
-  border-radius: 6px;
+  border: none;
 }
 
 button:hover {
   background-color: #48e01c;
-  width: 90px;
-  transition: .2s;
+  transition: .3s;
 }
 
 .cardLocation {
   display: flex;
   background-color: #272121;
   width: 80%;
-  margin: 35px auto;
+  margin: 15px auto;
   border-radius: 6px;
   padding: 10px;
   border: 2px solid gray;
@@ -112,6 +110,14 @@ img {
   border-radius: 5px;
 }
 
+.residentName {
+  height: 100px;
+  margin:auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .cardinfo {
   padding: 15px;
   text-align: left;
@@ -119,7 +125,7 @@ img {
 
 .cardinfo span {
   font-size: 17px;
-  color: gray;
+  /* color: gray; */
 }
 
 .cardinfo p {
@@ -132,7 +138,6 @@ img {
   text-align: left;
   background-color: #272121;
   width: 110px;
-  
   position: absolute;
   border-radius: 2px;
   color: white;
@@ -141,6 +146,23 @@ img {
 .cardalive p {
   display: inline-block;
   font-weight: bold;
+}
+
+.resultSearch  {
+padding: 10px;
+font-size: 20px;
+text-align: left;
+width: 920px;
+background-color: #fafafa;
+}
+
+.resultSearch span{
+color: black;
+font-weight: bold;
+}
+
+.search-bar {
+  margin-bottom: 30px;
 }
 
 .colorgrey {

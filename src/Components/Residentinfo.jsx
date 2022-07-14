@@ -73,7 +73,9 @@ const Residentinfo = ({ resident, residentlength }) => {
                 <div className='img-resident'>
                     <img src={residentItem.image} alt="" />
                 </div>
-                <h2>{residentItem.name}</h2>
+               <div className='residentName'>
+               <h2>{residentItem.name}</h2>
+               </div>
                 <hr />
                 <div className='cardinfo'>
                     <span>Species</span>

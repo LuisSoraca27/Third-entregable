@@ -2,38 +2,37 @@ import axios from 'axios';
 import React from 'react';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import BarSearch from './BarSearch';
 import Residentinfo from './Residentinfo';
 
 const Location = () => {
 
     const [location, setlocation] = useState({})
-    const [text, setText] = useState()
+   
 
-    useEffect(() => {
-        const randomlocation = Math.floor(Math.random() * 126) + 1;
-        axios.get(`https://rickandmortyapi.com/api/location/${randomlocation}`)
+    const randomlocation = Math.floor(Math.random() * 126) + 1;
+
+    const getLocation = (url) => {
+        axios.get(url)
             .then(res => {
                 setlocation(res.data)
             })
+    }
+    useEffect(() => {
+        const url = 'https://rickandmortyapi.com/api/location/' + randomlocation
+        getLocation(url)
 
     }, [])
     // console.log(location)
 
-    const getLocation = () => {
-        axios.get(`https://rickandmortyapi.com/api/location/${text}`)
-        .then(res => {
-            setlocation(res.data)
-        })
-        console.log(text)
-    }
-        
+
+
     return (
         <div>
             <div className='portada'>
             </div>
             <h1>Rick and Morty wiki</h1>
-            <input type="text" value={text} placeholder="   Type a location id" onChange={e => setText(e.target.value)} />
-            <button onClick={getLocation}>Search</button>
+            <BarSearch getLocation={getLocation} />
             <div className='cardLocation'>
                 <div className='helpercard'>
                     <span>Name:</span>
@@ -54,9 +53,9 @@ const Location = () => {
             </div>
             <h1>Residents</h1>
             <div className='content-resident'>
-                    {location.residents?.map(resident => (
-                        <Residentinfo resident={resident} residentlength ={location.residents?.length} key={resident} />
-                    ))}
+                {location.residents?.map(resident => (
+                    <Residentinfo resident={resident} residentlength={location.residents?.length} key={resident} />
+                ))}
             </div>
         </div>
     );
