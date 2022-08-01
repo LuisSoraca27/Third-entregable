@@ -24,7 +24,7 @@ const BarSearch = ({ getLocation }) => {
                         getLocationByName()
                     }
                 } />
-                
+
                 {locationsSearched.map(location => {
                     return (
                         <div key={location.id} className='bg-dark '>

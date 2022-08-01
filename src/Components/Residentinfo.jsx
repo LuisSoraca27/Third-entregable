@@ -36,37 +36,6 @@ const Residentinfo = ({ resident, residentlength }) => {
         }
     }
 
-    // const existResident = () => {
-    //     if(residentlength) {
-    //         return(
-    //             <div className='residentcard'>
-    //             {changeColor()}
-    //             <div className='img-resident'>
-    //                 <img src={residentItem.image} alt="" />
-    //             </div>
-    //             <h2>{residentItem.name}</h2>
-    //             <hr />
-    //             <div className='cardinfo'>
-    //                 <span>Species</span>
-    //                 <p>{residentItem.species}</p>
-    //                 <br />
-    //                 <span>Origin</span>
-    //                 <p>{residentItem.origin?.name}</p>
-    //                 <br />
-    //                 <span>Appearance in episodes</span>
-    //                 <p>{residentItem.episode?.length}</p>
-    //             </div>
-    //         </div>
-    //         )
-    //     } else  {
-    //         return (
-    //            <div>
-    //              <h2>No hay residents</h2>
-    //            </div>
-    //         )
-    //     }
-    // }
-
     return (
         <div className='residentcard'>
                 {changeColor()}

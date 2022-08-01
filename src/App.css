@@ -65,6 +65,7 @@ button:hover {
 
 .cardLocation {
   display: flex;
+  flex-wrap: wrap;
   background-color: #272121;
   width: 80%;
   margin: 15px auto;
